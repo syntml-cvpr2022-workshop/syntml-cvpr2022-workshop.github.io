@@ -1,154 +1,187 @@
 <!DOCTYPE html>
-<html>
+<!-- saved from url=(0059)https://www.w3schools.com/w3css/tryw3css_templates_band.htm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SyntML 2022</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="css">
+<link rel="stylesheet" href="font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index.html#program" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAM</a>
+    <a href="index.html#speakers" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPEAKERS</a>
+    <a href="index.html#organizers" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ORGANIZERS</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html#program" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROGRAM</a>
+  <a href="index.html#speakers" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SPEAKERS</a>
+  <a href="index.html#organizers" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ORGANIZERS</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-left" style="display: none;">
+    <img src="./Images/banner.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-sand w3-padding-64 w3-animate-input w3-hide-small">
+      <h3>Simulation</h3>
+<!--      <p><b>We had the best time playing at Venice Beach!</b></p>   -->
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-left" style="display: none;">
+    <img src="./Images/banner.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-yellow w3-padding-64 w3-animate-input w3-hide-small">
+      <h3>Generative Models</h3>
+<!--      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    -->
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-left" style="display: block;">
+    <img src="./Images/banner.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-orange w3-padding-64 w3-animate-input w3-hide-small">
+      <h3>Domain Adaptation</h3>
+<!--      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    -->
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-left" style="display: none;">
+    <img src="./Images/banner.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-green w3-padding-64 w3-animate-input w3-hide-small">
+      <h3>Data Augmentation</h3>
+<!--      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    -->
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center" style="display: none;">
+    <img src="./Images/banner.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-lime w3-padding-64 w3-animate-input w3-hide-small">
+      <h3>Applications</h3>
+<!--      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    -->
+    </div>
+  </div>
     
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Machine Learning with Synthetic Data (SyntML)</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        
-        <h1>SyntML 2022</h1>
-        <h2>CVPR Workshop on Machine Learning with Synthetic Data</h2>
-        
-        <h3>Introduction</h3>        
-        <p>
-        Modern machine learning models are data hungry. Collecting and annotating data is hard and expensive. Moreover, there is a need for diverse training data in order to create fair and unbiased models. 
-            With advances in simulations and generative models, utilizing synthetic data is becoming a viable alternative to training models using real data. 
-            However, there are still many open problems to realize this goal, such as lack of standard tools, realism gap between synthetic and real data, and need for machine learning algorithms to effectively utilize imperfect synthetic data. 
-            The goal of this workshop is to bring in researchers, and discuss potential issues, current trends,  and solutions around utilizing synthetic data to develop accurate machine learning solutions. 
-        <p>
-
-        <h3>Topics Covered</h3>        
-        <ul>
-  <li>Simulation environments</li>
-  <li>Generative models for data synthesis</li>
-  <li>Applications of synthetic data to audio/visual problems</li>
-  <li>Synthetic data augmentation</li>
-  <li>Synthetic to real domain adaptation</li>
-</ul>
-
-    <h3>Program Outline (Jun 19, 2022)</h3>   
-                <ul>
-
-<li>Opening remarks by organizers [5 min] (1:30-1:35pm)</li>
-<li>Invited talk by Vladlen Koltun [35 min] (1:35-2:10pm) </li>
-<li>Invited talk by Sanja Fidler [35 min] (2:10-2:45pm) </li>
-<li>Coffee break [15 min] (2:45-3:00pm) </li>
-<li>Invited talk by Raquel Urtasun [35 min] (3:00-3:35pm) </li>
-<li>Invited talk by Jonathan Laserson [35 min] (3:35-4:10pm) </li>
-<li>break [5 min] (4:10-4:15pm) </li>
-<li>Panel discussion [35 min] (4:15-4:50pm) </li>
-<li>Closing remarks [5 min] (4:50-4:55pm) </li>
-<li>NOTE: <b>We do not have paper presentations because we are not accepting papers this year</b>. </li>
-</ul>
-
-    <h3>Speakers</h3>     
-        
-    <p>
-        <b> Vladlen Koltun </b> is a Distinguished Scientist at Apple. Prior to Apple, he was the
-Chief Scientist for Intelligent Systems at Intel, where he built an international research lab,
-based on four continents, that produced high-impact results in robotics, computer vision, image
-synthesis, machine learning, and other areas. <a href="http://vladlen.info">http://vladlen.info</a>.
-        </p>
-        
-    <p>
-        <b> Sanja Fidler </b> is an Associate Professor at University of Toronto, and a Director of
-AI at NVIDIA, leading a research lab in Toronto. Prior to coming to Toronto, in 2012/2013, she
-was a Research Assistant Professor at Toyota Technological Institute at Chicago, an academic
-institute located in the campus of University of Chicago. She did her postdoc with Prof. Sven
-Dickinson at University of Toronto in 2011/2012. Sanja finished her PhD in 2010 at University
-of Ljubljana in Slovenia. In 2010,she visited Prof. Trevor Darrell‘s group at UC Berkeley and
-ICSI. She got her BSc degree in Applied Math at University of Ljubljana.  <a href="https://www.cs.utoronto.ca/~fidler/">https://www.cs.utoronto.ca/~fidler/</a>.
-        </p>
-
-                <p>         <b>Raquel Urtasun </b> is the Founder and CEO of Waabi. She is also a Full Professor in the Department of Computer Science at the University of Toronto and a co-founder of the Vector Institute for AI. 
-From 2017 to 2021 she was the Chief Scientist and Head of R\&D at Uber ATG.
-From 2015-2017 she was a Canada research chair in machine learning and computer vision and a co-founder of the Vector Institute for AI. 
- Prior to this, she was an Assistant Professor at the Toyota Technological Institute at Chicago (TTIC), an academic computer science institute affiliated with the University of Chicago. 
- She was also a visiting professor at ETH Zurich during the spring semester of 2010. 
- She received her Bachelors degree from Universidad Publica de Navarra in 2000, her Ph.D. degree from the Computer Science department at Ecole Polytechnique Federal de Lausanne (EPFL) in 2006 and did her postdoc at MIT and UC Berkeley. 
- She is a world leading expert in AI for self-driving cars. 
- Her research interests include machine learning, computer vision, robotics, AI and remote sensing. 
- She is a recipient of an NSERC EWR Steacie Award, an NVIDIA Pioneers of AI Award, a Ministry of Education and Innovation Early Researcher Award, three Google Faculty Research Awards, an Amazon Faculty Research Award, two NVIDIA Pioneer Research Awards, a Connaught New Researcher Award, a Fallona Family Research Award and two Best Paper Runner up Prize awarded at CVPR in 2013 and 2017 respectively. 
- She was also named Chatelaine 2018 Woman of the year, and 2018 Toronto's top influencers by Adweek magazine.
-</p>
-
-<p> <b> Jonathan Laserson </b> is the Head of AI Research at Datagen. 
-    He earned his PhD in the Computer Science AI lab at Stanford University. 
-    After a few years at Google, he ventured into the startup world, mostly building Computer Vision algorithms.  
-    Prior to Datagen, he was the lead AI Strategist at Zebra Medical vision, where he led the development of two FDA-approved clinical products, applying neural networks to millions of medical images and unstructured textual reports.  </p>
-
-            <h3>Panelists</h3>     
-        TBD
-
-        <h3>Organizers</h3>     
+<!-- intro section    -->
     
-        <p>
-        <b>Oncel Tuzel </b> is a principal researcher and research manager at MIND team in Apple. He received his
-        Ph.D. from the computer science department at Rutgers University in 2008. His research interests are
-        broadly in machine learning and robotics, particularly focusing on generative models and simulations
-        to improve sample and computational efficiency of learning algorithms. He has co-authored over 70
-        peer-reviewed publications and holds over 50 US and international patents. His work has received the
-        best paper award in 2017 CVPR, the best paper runner-up award in 2007 CVPR, and the 2014 R&D
-        100 award -- awarded to 100 most innovative technology introduced in 2013.
-        </p>
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+    <h1 class="w3-wide">Introduction</h1>
+<!--    <p class="w3-opacity"><i>Introduction</i></p>-->
+    <p class="w3-justify">Modern machine learning models are data hungry. Collecting and annotating data is hard and expensive. Moreover, there is a need for diverse training data in order to create fair and unbiased models.
+            With advances in simulations and generative models, utilizing synthetic data is becoming a viable alternative to training models using real data.
+            However, there are still many open problems to realize this goal, such as lack of standard tools, realism gap between synthetic and real data, and need for machine learning algorithms to effectively utilize imperfect synthetic data.
+            The goal of this workshop is to bring in researchers, and discuss potential issues, current trends,  and solutions around utilizing synthetic data to develop accurate machine learning solutions.</p>      
+          <h4 class="w3-justify">Topics Covered</h4>
+   <li class="w3-justify">Simulation environments</li>
+<li class="w3-justify">Generative models for data synthesis</li>
+<li class="w3-justify">Applications of synthetic data to audio/visual problems</li>
+<li class="w3-justify">Synthetic data augmentation</li>
+<li class="w3-justify">Synthetic to real domain adaptation</li>
+  </div>
+<!--  </div>-->
         
-        <p>
-        <b>Ashish Shrivastava</b> is a research scientist at Apple where he conducts research in the area of machine
-        learning focused on computer vision, speech, and robotics applications. He has done extensive research
-        on synthetic data, generative models, domain adaptation, and unsupervised learning. His work on
-        using synthetic and unsupervised data won the best paper award at CVPR’17. He received his PhD
-        from University of Maryland, College Park under the supervision of Prof. Rama Chellappa.
-        </p>
+  <!-- The Program Section -->
+  <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="program">
+    <h1 class="w3-wide">Program Outline (June 19, 2022)</h1>
+<!--    <p class="w3-opacity"><i>We love music</i></p>-->
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">Opening remarks by organizers [5 min] (1:30-1:35pm) </li>
+        <li class="w3-padding">Invited talk by Vladlen Koltun [35 min] (1:35-2:10pm)</li>
+        <li class="w3-padding">Invited talk by Sanja Fidler [35 min] (2:10-2:45pm) </li>
+        <li class="w3-padding">Coffee break [15 min] (2:45-3:00pm) </li>
+        <li class="w3-padding">Invited talk by Raquel Urtasun [35 min] (3:00-3:35pm) </li>
+        <li class="w3-padding">Invited talk by Jonathan Laserson [35 min] (3:35-4:10pm) </li>
+        <li class="w3-padding">Break [5 min] (4:10-4:15pm) </li>
+        <li class="w3-padding">Panel discussion [35 min] (4:15-4:50pm)</li>
+        <li class="w3-padding">Closing remarks [5 min] (4:50-4:55pm)</li>
+        <li class="w3-padding">NOTE: <b>We do not have paper presentations because we are not accepting papers this year</b></li>
 
-        <p>
-        <b>Russ Webb</b> received a PhD from Cornell University in Electrical Engineering in 2000 studying micromechanics, shipped Palm OS 4.0 as technical lead for the OS, advanced neuroscience at the Redwood Institute, created a machine learning research group at the University of Canterbury, and innovated in the area of photography at Apple. 
-            Currently, he conducts and leads research in the areas of
-        representation learning and reasoning at Apple.
-        </p>
 
-        <p>
-        <b>Ming-Yu Liu</b> is a Distinguished Research Scientist and Manager at NVIDIA Research. He received
-his Ph.D. from the Department of Electrical and Computer Engineering at the University of Maryland
-College Park. He won the R&D 100 Award by R&D Magazine for his robotic bin picking work in
-2014. In SIGGRAPH 2019, he won the Best in Show Award and Audience Choice Award in the Real-
-Time Live track for his GauGAN work. His GauGAN work also won the Best of What’s New Award
-by the Popular Science Magazine in 2019. His research interest is on generative image modeling. His
-goal is to enable machines human-like imagination capability.
-        </p>
-        
-        <p>
-        <b>Arun Mallya </b> is a Senior Research Scientist at NVIDIA Research. He obtained his Ph.D. from the
-        University of Illinois at Urbana-Champaign in 2018, with a focus on performing multiple tasks effi-
-        ciently with a single deep network. He holds a B.Tech. in Computer Science and Engineering from
-        the Indian Institute of Technology - Kharagpur (2012), and an MS in Computer Science from the Uni-
-        versity of Illinois at Urbana-Champaign (2014). His interests are in generative modeling and enabling
-        new applications of deep neural networks.
-        </p>
-        
-        <p>
-        <b> Aysegul Dundar </b> is an Assistant Professor of Computer Science at Bilkent Univesity, Turkey and a
-        Sr. Research Scientist at NVIDIA. She received her Ph.D. degree at Purdue University in 2016, under
-        supervision of Professor Eugenio Culurciello. She received a B.Sc. degree in Electrical and Electronics
-        Engineering from Bogazici University in Turkey, in 2011. Her current research focuses are on domain
-        adaptation and generative models for image synthesis and manipulation.
-        </p>
-        
-        <p>
-        <b> Sofien Bouaziz </b> is currently Head of XR Presence at Facebook Reality Labs. Prior to this, he was
-        a research scientist and group manager at Google, where he lead and managed a large perception
-        team working on cutting edge AR research and development. His team shipped multiple successful
-        technologies, e.g., depth reconstruction for the Pixel 4 depth sensor, ARCore depth API, Pixel 5 portrait
-        relighting, TensorFlow Graphics. Prior to Google, he was a principal research scientist at Apple where
-        he designed, developed, and productized the realtime face tracking algorithm powering the iPhone X
-        Animojis and also available to third-party developers through ARKit. His research interests include
-        machine learning, computer vision, and computer graphics. He completed my PhD degree in 2015 in
-        the Computer Graphics and Geometry Laboratory (LGG) at the Swiss Federal Institute of Technology
-        in Lausanne (EPFL).        
-        </p>
+      </ul>
+  </div>
 
-    </body>
-</html>
+  <!-- The Speakers Section -->
+  <div class="w3-white" id="speakers">
+    <div class="w3-container w3-content w3-padding-32" style="max-width:800px">
+      <h1 class="w3-wide w3-center">Speakers</h1>
+        <p class="w3-justify"><span class="w3-xlarge">Vladlen Koltun</span> is a Distinguished Scientist at Apple. Prior to Apple, he was the Chief Scientist for Intelligent Systems at Intel, where he built an international research lab, based on four continents, that produced high-impact results in robotics, computer vision, image synthesis, machine learning, and other areas. <a href="http://vladlen.info/">http://vladlen.info</a>.</p>
+        
+    <p class="w3-justify"><span class="w3-xlarge">Sanja Fidler</span> is an Associate Professor at University of Toronto, and a Director of AI at NVIDIA, leading a research lab in Toronto. Prior to coming to Toronto, in 2012/2013, she was a Research Assistant Professor at Toyota Technological Institute at Chicago, an academic institute located in the campus of University of Chicago. She did her postdoc with Prof. Sven Dickinson at University of Toronto in 2011/2012. Sanja finished her PhD in 2010 at University of Ljubljana in Slovenia. In 2010,she visited Prof. Trevor Darrell‘s group at UC Berkeley and ICSI. She got her BSc degree in Applied Math at University of Ljubljana. <a href="https://www.cs.utoronto.ca/~fidler/">https://www.cs.utoronto.ca/~fidler</a>.</p>
+        
+<p class="w3-justify"><span class="w3-xlarge">Raquel Urtasun</span> is the Founder and CEO of Waabi. She is also a Full Professor in the Department of Computer Science at the University of Toronto and a co-founder of the Vector Institute for AI. From 2017 to 2021 she was the Chief Scientist and Head of R\&amp;D at Uber ATG. From 2015-2017 she was a Canada research chair in machine learning and computer vision and a co-founder of the Vector Institute for AI. Prior to this, she was an Assistant Professor at the Toyota Technological Institute at Chicago (TTIC), an academic computer science institute affiliated with the University of Chicago. She was also a visiting professor at ETH Zurich during the spring semester of 2010. She received her Bachelors degree from Universidad Publica de Navarra in 2000, her Ph.D. degree from the Computer Science department at Ecole Polytechnique Federal de Lausanne (EPFL) in 2006 and did her postdoc at MIT and UC Berkeley. She is a world leading expert in AI for self-driving cars. Her research interests include machine learning, computer vision, robotics, AI and remote sensing. She is a recipient of an NSERC EWR Steacie Award, an NVIDIA Pioneers of AI Award, a Ministry of Education and Innovation Early Researcher Award, three Google Faculty Research Awards, an Amazon Faculty Research Award, two NVIDIA Pioneer Research Awards, a Connaught New Researcher Award, a Fallona Family Research Award and two Best Paper Runner up Prize awarded at CVPR in 2013 and 2017 respectively. She was also named Chatelaine 2018 Woman of the year, and 2018 Toronto's top influencers by Adweek magazine.</p>
+        
+<p class="w3-justify"><span class="w3-xlarge">Jonathan Laserson</span> is the Head of AI Research at Datagen. He earned his PhD in the Computer Science AI lab at Stanford University. After a few years at Google, he ventured into the startup world, mostly building Computer Vision algorithms. Prior to Datagen, he was the lead AI Strategist at Zebra Medical vision, where he led the development of two FDA-approved clinical products, applying neural networks to millions of medical images and unstructured textual reports.</p>
+    </div>
+  </div>
+
+
+  <!-- The Organizers Section -->
+  <div class="w3-container w3-content w3-padding-32" style="max-width:800px" id="organizers">
+    <h1 class="w3-wide w3-center">Organizers</h1>
+      <p class="w3-justify"><span class="w3-large">Oncel Tuzel</span> is a principal researcher and research manager at MIND team in Apple. He received his Ph.D. from the computer science department at Rutgers University in 2008. His research interests are broadly in machine learning and robotics, particularly focusing on generative models and simulations to improve sample and computational efficiency of learning algorithms. He has co-authored over 70 peer-reviewed publications and holds over 50 US and international patents. His work has received the best paper award in 2017 CVPR, the best paper runner-up award in 2007 CVPR, and the 2014 R&amp;D 100 award -- awarded to 100 most innovative technology introduced in 2013.</p>
+
+      <p class="w3-justify"><span class="w3-large">Ashish Shrivastava</span> is a tech lead and applied research scientist at <a href="http://getcruise.com/">Cruise</a>, where his focus is on utilizing synthetic data to train/test ML models for autonomous vehicles. Prior to Cruise, he was a research scientist at Apple where he conducted research in the area of machine learning focused on computer vision, speech, and robotics applications. He has done extensive research on synthetic data, generative models, domain adaptation, and unsupervised learning. His work on using synthetic and unsupervised data won the best paper award at CVPR’17. He received his PhD from University of Maryland, College Park under the supervision of Prof. Rama Chellappa.</p>
+
+      <p class="w3-justify"><span class="w3-large">Russ Webb</span> received a PhD from Cornell University in Electrical Engineering in 2000 studying micromechanics, shipped Palm OS 4.0 as technical lead for the OS, advanced neuroscience at the Redwood Institute, created a machine learning research group at the University of Canterbury, and innovated in the area of photography at Apple. Currently, he conducts and leads research in the areas of representation learning and reasoning at Apple.</p>
+
+      <p class="w3-justify"><span class="w3-large">Ming-Yu Liu</span> is a Distinguished Research Scientist and Manager at NVIDIA Research. He received his Ph.D. from the Department of Electrical and Computer Engineering at the University of Maryland College Park. He won the R&D 100 Award by R&D Magazine for his robotic bin picking work in 2014. In SIGGRAPH 2019, he won the Best in Show Award and Audience Choice Award in the Real- Time Live track for his GauGAN work. His GauGAN work also won the Best of What’s New Award by the Popular Science Magazine in 2019. His research interest is on generative image modeling. His goal is to enable machines human-like imagination capability.</p>
+
+      <p class="w3-justify"><span class="w3-large">Arun Mallya</span> is a Senior Research Scientist at NVIDIA Research. He obtained his Ph.D. from the University of Illinois at Urbana-Champaign in 2018, with a focus on performing multiple tasks effi- ciently with a single deep network. He holds a B.Tech. in Computer Science and Engineering from the Indian Institute of Technology - Kharagpur (2012), and an MS in Computer Science from the Uni- versity of Illinois at Urbana-Champaign (2014). His interests are in generative modeling and enabling new applications of deep neural networks.</p>
+
+      <p class="w3-justify"><span class="w3-large">Aysegul Dundar</span> is an Assistant Professor of Computer Science at Bilkent Univesity, Turkey and a Sr. Research Scientist at NVIDIA. She received her Ph.D. degree at Purdue University in 2016, under supervision of Professor Eugenio Culurciello. She received a B.Sc. degree in Electrical and Electronics Engineering from Bogazici University in Turkey, in 2011. Her current research focuses are on domain adaptation and generative models for image synthesis and manipulation.</p>
+
+      <p class="w3-justify"><span class="w3-large">Sofien Bouaziz </span> is currently Head of XR Presence at Facebook Reality Labs. Prior to this, he was a research scientist and group manager at Google, where he lead and managed a large perception team working on cutting edge AR research and development. His team shipped multiple successful technologies, e.g., depth reconstruction for the Pixel 4 depth sensor, ARCore depth API, Pixel 5 portrait relighting, TensorFlow Graphics. Prior to Google, he was a principal research scientist at Apple where he designed, developed, and productized the realtime face tracking algorithm powering the iPhone X Animojis and also available to third-party developers through ARKit. His research interests include machine learning, computer vision, and computer graphics. He completed my PhD degree in 2015 in the Computer Graphics and Geometry Laboratory (LGG) at the Swiss Federal Institute of Technology in Lausanne (EPFL).</p>
+  </div>
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="./Images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+</body></html>
