@@ -21,6 +21,8 @@ body {font-family: "Lato", sans-serif}
     <a href="index.html#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="index.html#program" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROGRAM</a>
     <a href="index.html#speakers" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPEAKERS</a>
+    <a href="index.html#talks" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TALKS</a>
+    <a href="index.html#panel" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PANEL</a>
     <a href="index.html#organizers" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ORGANIZERS</a>
   </div>
 </div>
@@ -30,6 +32,8 @@ body {font-family: "Lato", sans-serif}
   <a href="index.html#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
   <a href="index.html#program" class="w3-bar-item w3-button w3-padding-large">PROGRAM</a>
   <a href="index.html#speakers" class="w3-bar-item w3-button w3-padding-large">SPEAKERS</a>
+  <a href="index.html#talks" class="w3-bar-item w3-button w3-padding-large">TALKS</a>
+  <a href="index.html#panel" class="w3-bar-item w3-button w3-padding-large">PANEL</a>
   <a href="index.html#organizers" class="w3-bar-item w3-button w3-padding-large">ORGANIZERS</a>
 </div>
 
@@ -114,7 +118,7 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-white" id="speakers">
     <div class="w3-container w3-content w3-padding-32" style="max-width:800px">
         <h1 class="w3-wide w3-center"><b>Speakers</b></h1>
-        <p class="w3-justify"><span class="w3-xlarge w3-text-deep-orange">Vladlen Koltun</span> is a Distinguished Scientist at Apple. Prior to Apple, he was the Chief Scientist for Intelligent Systems at Intel, where he built an international research lab, based on four continents, that produced high-impact results in robotics, computer vision, image synthesis, machine learning, and other areas. <a href="http://vladlen.info/">http://vladlen.info</a>.</p>
+        <p class="w3-justify"><span class="w3-xlarge w3-text-deep-orange">Erroll Wood</span> is a Staff Software Engineer at Google, working on Digital Humans. Previously, he was a member of Microsoft's Mixed Reality AI Lab, where he worked on hand tracking for HoloLens 2, avatars for Microsoft Mesh, synthetic data for face tracking, and Holoportation. He did his PhD at the University of Cambridge, working on gaze estimation.</p>
         
     <p class="w3-justify"><span class="w3-xlarge w3-text-deep-orange">Sanja Fidler</span> is an Associate Professor at University of Toronto, and a Director of AI at NVIDIA, leading a research lab in Toronto. Prior to coming to Toronto, in 2012/2013, she was a Research Assistant Professor at Toyota Technological Institute at Chicago, an academic institute located in the campus of University of Chicago. She did her postdoc with Prof. Sven Dickinson at University of Toronto in 2011/2012. Sanja finished her PhD in 2010 at University of Ljubljana in Slovenia. In 2010,she visited Prof. Trevor Darrell‘s group at UC Berkeley and ICSI. She got her BSc degree in Applied Math at University of Ljubljana. <a href="https://www.cs.utoronto.ca/~fidler/">https://www.cs.utoronto.ca/~fidler</a>.</p>
         
@@ -124,7 +128,53 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
 
+  <!-- The Talks Section -->
+  <div class="w3-white" id="talks">
+    <div class="w3-container w3-content w3-padding-32" style="max-width:800px">
+        <h1 class="w3-wide w3-center"><b>Talks</b></h1>
+        <p>
+        <span class="w3-large w3-text-blue">Speaker</span>: Erroll Wood <br> 
+        <span class="w3-large w3-text-blue">Title</span>: Synthetics with Digital Humans <br>
+        <span class="w3-large w3-text-blue">Abstract</span>: Nowadays, collecting the right dataset for machine learning is often more challenging than choosing the model. We address this with photorealistic synthetic training data – labelled images of humans made using computer graphics. With synthetics we can generate clean labels without annotation noise or error, produce labels otherwise impossible to annotate by hand, and easily control variation and diversity in our datasets. I will show you how synthetics underpins our work on understanding humans, including how it enables fast and accurate 3D face reconstruction, in the wild. <br> <br>
 
+        <span class="w3-large w3-text-blue">Speaker</span>: Sanja Fidler <br> 
+        <span class="w3-large w3-text-blue">Title</span>: TBD <br>
+        <span class="w3-large w3-text-blue">Abstract</span>: TBD <br>
+            <br>
+
+        <span class="w3-large w3-text-blue">Speaker</span>: Raquel Urtasun <br> 
+        <span class="w3-large w3-text-blue">Title</span>: TBD <br>
+        <span class="w3-large w3-text-blue">Abstract</span>: TBD <br>
+            <br>
+        
+        <span class="w3-large w3-text-blue">Speaker</span>: Jonathan Laserson <br> 
+        <span class="w3-large w3-text-blue">Title</span>: Make It Real: Applying StyleGAN On Top of Synthetically Generated Data <br>
+        <span class="w3-large w3-text-blue">Abstract</span>: Neural generators like StyleGAN can generate photorealistic images in many domains after learning their distribution "bottom-up" from large image datasets. While it is possible to manipulate the generated images in various ways, controlling the generated content is a hard task, as it requires reverse-engineering the latent space of the StyleGAN. <br>
+            At Datagen, we create synthetic visual data – images and videos – using a 3D simulator and a graphics pipeline. We have full control over many aspects of the content we generate. When we generate a person, we can choose the desired ethnicity, expression, hair style, lighting conditions, and accessories (i.e glasses, hats).  Although our 3D artists and engineers strive to make the generated faces and scenes as diverse and realistic as possible, there is often a domain gap between the level of diversity and photorealism we can achieve using the "top-down" graphics pipeline and real-world photos.<br>
+            To bridge the domain gap, we propose to first produce an initial version of the desired image using the top-down synthetic pipeline, and then invert this image into the latent space of a StyleGAN trained on real images. We show that the inversion maintains the same person identity, but adds photorealism and provides access to new modes of diversity. It enables us to generate synthetic, photorealistic image datasets that can be used to train computer vision models, such as face recognition, while retaining full control over the distribution of the data. <br>
+            <br>
+
+    </div>
+  </div>
+    
+  <!-- The Panel Section -->    
+  <div class="w3-white" id="panel">
+    <div class="w3-container w3-content w3-padding-32" style="max-width:800px">
+        <h1 class="w3-wide w3-center"><b>Panel</b></h1>
+        <p>
+        <span class="w3-large w3-text-blue">Errol Wood</span>: Staff Software Engineer at Google. <br>
+        <span class="w3-large w3-text-blue">Sanja Fidler</span>: Associate Professor at University of Toronto, and a VP of Research at NVIDIA. <br> 
+        <span class="w3-large w3-text-blue">Jonathan Laserson</span>: Head of AI research at Datagen. <br> 
+        <span class="w3-large w3-text-blue">Mike Roberts</span>: Research Scientist at Intel. <br> 
+        <span class="w3-large w3-text-blue">Kwang Moo Yi</span>: Assistant Professor at University of British Columbia (UBC). <br> 
+        <span class="w3-large w3-text-blue">Ankur Handa</span>: Research Scientist at Nvidia.<br> 
+        <span class="w3-large w3-text-blue">Javier Romero</span>: Research Scientist at Meta.<br> 
+        </p>
+
+    </div>
+  </div>
+    
+    
   <!-- The Organizers Section -->
   <div class="w3-container w3-content w3-padding-32" style="max-width:800px" id="organizers">
     <h1 class="w3-wide w3-center"><b>Organizers</b></h1>
